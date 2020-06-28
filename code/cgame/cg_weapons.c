@@ -642,9 +642,9 @@ void CG_RegisterWeapon( int weaponNum ) {
 			break;
 		}
 	}
-	if ( ammo->classname && ammo->world_model[0] ) {
-		weaponInfo->ammoModel = trap_R_RegisterModel( ammo->world_model[0] );
-	}
+	//if ( ammo->classname && ammo->world_model[0] ) {
+	//	weaponInfo->ammoModel = trap_R_RegisterModel( ammo->world_model[0] );
+	//}
 
 	COM_StripExtension( item->world_model[0], path, sizeof(path) );
 	Q_strcat( path, sizeof(path), "_flash.md3" );
