@@ -1087,7 +1087,7 @@ void ClientSpawn(gentity_t *ent) {
 	client->ps.clientNum = index;
 
 	client->ps.stats[STAT_WEAPONS] = ( 1 << WP_RAILGUN );
-	client->ps.ammo[WP_RAILGUN] = -1;
+	client->ps.ammo[WP_RAILGUN] = 999;
 
 	client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GAUNTLET );
 	client->ps.ammo[WP_GAUNTLET] = -1;
